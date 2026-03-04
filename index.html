@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FastWorld - Discord Regeln</title>
+<title>FastWorld - Discord Regelwerk</title>
 
 <style>
 body {
@@ -11,185 +11,168 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: radial-gradient(circle at top, #0f1c3f, #070d1f);
     color: white;
-    text-align: center;
 }
 
-/* Header */
-.header {
-    padding: 70px 20px 40px;
-}
-
-.header h1 {
-    font-size: 55px;
-    color: #6c7cff;
-    letter-spacing: 3px;
-}
-
-.header p {
-    color: #aaa;
-    letter-spacing: 5px;
-}
-
-/* Grid Layout */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding-bottom: 60px;
-}
-
-/* Regel Box */
-.card {
-    background: linear-gradient(145deg, #111a3a, #0a122b);
-    border-radius: 20px;
-    padding: 30px;
+/* Hauptbox */
+.wrapper {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 25px;
     border: 1px solid rgba(108,124,255,0.3);
-    box-shadow: 0 0 20px rgba(108,124,255,0.2);
+    box-shadow: 0 0 40px rgba(108,124,255,0.2);
+    background: linear-gradient(145deg, #0d1533, #0a1128);
+}
+
+/* Titel */
+.title {
+    font-size: 32px;
+    color: #6c7cff;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Regel Karte */
+.rule {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #111a3a, #0a122b);
+    border: 1px solid rgba(108,124,255,0.2);
     transition: 0.3s ease;
-    position: relative;
-    overflow: hidden;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 35px rgba(108,124,255,0.6);
+.rule:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(108,124,255,0.5);
 }
 
-/* Icon Box */
-.icon-box {
-    width: 70px;
-    height: 70px;
+/* Nummer Box */
+.number {
+    min-width: 55px;
+    height: 55px;
+    border-radius: 15px;
     background: linear-gradient(145deg, #4e5fff, #2a3cff);
-    border-radius: 18px;
-    margin: auto;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 15px rgba(108,124,255,0.6);
 }
 
-/* Discord Icon */
-.discord-icon {
-    width: 40px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -60px;
-    animation: fallDown 0.8s ease forwards;
+/* Text */
+.rule-content h3 {
+    margin: 0 0 8px 0;
+    color: #ffffff;
 }
 
-/* Fall Animation */
-@keyframes fallDown {
-    0% { top: -60px; opacity: 0; }
-    60% { top: 20px; opacity: 1; }
-    80% { top: 12px; }
-    100% { top: 15px; }
-}
-
-.card p {
-    color: #ccc;
+.rule-content p {
+    margin: 0;
+    color: #b8c0ff;
     line-height: 1.6;
+    font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>FastWorld</h1>
-    <p>DISCORD REGELN</p>
+<div class="wrapper">
+
+<div class="title">📜 Discord Regelwerk</div>
+
+<div class="rule">
+    <div class="number">1</div>
+    <div class="rule-content">
+        <h3>🤝 Respektvoller Umgang</h3>
+        <p>Geht respektvoll mit jedem um.</p>
+    </div>
 </div>
 
-<div class="container">
-
-<!-- Regel 1 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">2</div>
+    <div class="rule-content">
+        <h3>🚫 Kein NSFW oder Gewalt</h3>
+        <p>Das Teilen von NSFW- oder Gewaltdarstellungen ist untersagt.</p>
     </div>
-    <p>1. Geht respektvoll mit jedem um.</p>
 </div>
 
-<!-- Regel 2 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">3</div>
+    <div class="rule-content">
+        <h3>📢 Keine Eigenwerbung</h3>
+        <p>Eigenwerbung ist nicht erlaubt. Ausnahme: Absprache mit Moderatoren.</p>
     </div>
-    <p>2. Das Teilen von NSFW- oder Gewaltdarstellungen ist untersagt.</p>
 </div>
 
-<!-- Regel 3 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">4</div>
+    <div class="rule-content">
+        <h3>👤 Angemessener Name & Profilbild</h3>
+        <p>Jeder braucht einen kenntlichen und angemessenen Namen sowie Profilbild.</p>
     </div>
-    <p>3. Eigenwerbung ist nicht erlaubt. Ausnahme: Absprache mit Moderatoren.</p>
 </div>
 
-<!-- Regel 4 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">5</div>
+    <div class="rule-content">
+        <h3>💬 Kein Spam</h3>
+        <p>Kein Spam jeglicher Art – weder GIFs noch Text.</p>
     </div>
-    <p>4. Jeder braucht einen kenntlichen und angemessenen Namen sowie Profilbild.</p>
 </div>
 
-<!-- Regel 5 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">6</div>
+    <div class="rule-content">
+        <h3>📂 Richtige Kanäle nutzen</h3>
+        <p>Nachrichten gehören in die für sie vorgesehenen Kanäle.</p>
     </div>
-    <p>5. Kein Spam jeglicher Art – weder GIFs noch Text.</p>
 </div>
 
-<!-- Regel 6 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">7</div>
+    <div class="rule-content">
+        <h3>🌍 Keine Politik oder Religion</h3>
+        <p>Keine Diskussionen über Politik oder Religionen – jeder soll sich hier willkommen fühlen.</p>
     </div>
-    <p>6. Nachrichten gehören in die für sie vorgesehenen Kanäle.</p>
 </div>
 
-<!-- Regel 7 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">8</div>
+    <div class="rule-content">
+        <h3>🔒 Datenschutz</h3>
+        <p>Das Weitergeben oder Teilen privater Daten ist untersagt.</p>
     </div>
-    <p>7. Keine Diskussionen über Politik oder Religionen – JEDER soll sich hier willkommen fühlen.</p>
 </div>
 
-<!-- Regel 8 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">9</div>
+    <div class="rule-content">
+        <h3>📩 DM-Regelverstöße melden</h3>
+        <p>Bei Regelverstoß in DMs bitte einem Moderator oder Helper Bescheid sagen.</p>
     </div>
-    <p>8. Das Weitergeben bzw. Teilen von privaten Daten ist untersagt.</p>
 </div>
 
-<!-- Regel 9 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">10</div>
+    <div class="rule-content">
+        <h3>⚙️ Regelanpassungen</h3>
+        <p>Moderatoren und Helper behalten sich das Recht vor, Regeln jederzeit zu ändern.</p>
     </div>
-    <p>9. Bei Regelverstoß in DMs bitte Moderator/Helper informieren.</p>
 </div>
 
-<!-- Regel 10 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
+<div class="rule">
+    <div class="number">11</div>
+    <div class="rule-content">
+        <h3>⛔ Konsequenzen</h3>
+        <p>Ein Verstoß gegen diese Regeln kann zu Timeouts oder Ausschluss führen.</p>
     </div>
-    <p>10. Moderatoren/Helper dürfen Regeln jederzeit ändern.</p>
-</div>
-
-<!-- Regel 11 -->
-<div class="card">
-    <div class="icon-box">
-        <img src="discord.png" class="discord-icon">
-    </div>
-    <p>11. Verstöße können zu Timeout oder Ausschluss führen.</p>
 </div>
 
 </div>
