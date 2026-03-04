@@ -3,139 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FastWorld - Discord Regeln</title>
+<title>LeafMC - Discord Regeln</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #050508, #0a0f2a);
-    color: #4FC3F7;
-    overflow-x: hidden;
-}
-
-.container {
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f1c3f, #070d1f);
+    color: white;
     text-align: center;
-    padding: 80px 20px;
-    animation: fadeIn 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+/* Titel */
+.header {
+    padding: 80px 20px 40px;
 }
 
-h1 {
+.header h1 {
     font-size: 60px;
-    margin-bottom: 10px;
-    text-shadow: 0 0 20px #00BFFF;
+    color: #6c7cff;
+    letter-spacing: 3px;
 }
 
-h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-    text-shadow: 0 0 10px #00BFFF;
+.header p {
+    color: #aaa;
+    letter-spacing: 5px;
 }
 
-.rules {
+/* Container */
+.container {
+    width: 90%;
     max-width: 900px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
+}
+
+/* Regel Karten */
+.card {
+    background: linear-gradient(145deg, #111a3a, #0a122b);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(0, 191, 255, 0.3);
+    padding: 30px;
+    margin: 30px 0;
+    border: 1px solid rgba(108,124,255,0.3);
+    box-shadow: 0 0 20px rgba(108,124,255,0.2);
+    transition: all 0.3s ease;
 }
 
-.rule {
-    margin: 20px 0;
-    font-size: 18px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slideUp 1s forwards;
+/* Hover Effekt */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(108,124,255,0.6);
 }
 
-.rule:nth-child(1) { animation-delay: 0.3s; }
-.rule:nth-child(2) { animation-delay: 0.6s; }
-.rule:nth-child(3) { animation-delay: 0.9s; }
-.rule:nth-child(4) { animation-delay: 1.2s; }
-.rule:nth-child(5) { animation-delay: 1.5s; }
-.rule:nth-child(6) { animation-delay: 1.8s; }
-.rule:nth-child(7) { animation-delay: 2.1s; }
-.rule:nth-child(8) { animation-delay: 2.4s; }
-.rule:nth-child(9) { animation-delay: 2.7s; }
-.rule:nth-child(10) { animation-delay: 3s; }
-.rule:nth-child(11) { animation-delay: 3.3s; }
-
-@keyframes slideUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.card h2 {
+    margin-bottom: 15px;
+    color: #6c7cff;
 }
 
-.falling {
-    position: fixed;
-    top: -50px;
-    font-size: 30px;
-    animation: fall linear infinite;
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(110vh);
-    }
-}
-
-.footer {
-    margin-top: 40px;
-    font-size: 20px;
-    text-shadow: 0 0 10px #00BFFF;
+.card p {
+    color: #ccc;
+    line-height: 1.6;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>FastWorld</h1>
-    <h2>Discord Regeln</h2>
-
-    <div class="rules">
-        <p class="rule">1. Geht respektvoll mit jedem um.</p>
-        <p class="rule">2. Das Teilen von NSFW- oder Gewaltdarstellungen ist untersagt.</p>
-        <p class="rule">3. Eigenwerbung ist nicht erlaubt. Ausnahme: Absprache mit Moderatoren.</p>
-        <p class="rule">4. Jeder braucht einen kenntlichen und angemessenen Namen sowie Profilbild.</p>
-        <p class="rule">5. Kein Spam jeglicher Art – weder GIFs noch Text.</p>
-        <p class="rule">6. Nachrichten gehören in die für sie vorgesehenen Kanäle.</p>
-        <p class="rule">7. Keine Diskussionen über Politik oder Religionen – JEDER soll sich hier willkommen fühlen.</p>
-        <p class="rule">8. Das Weitergeben privater Daten ist untersagt.</p>
-        <p class="rule">9. Bei Regelverstößen in DMs bitte Moderatoren/Helper informieren.</p>
-        <p class="rule">10. Moderatoren behalten sich das Recht vor, Regeln zu ändern.</p>
-        <p class="rule">11. Verstöße können zu Timeout oder Ausschluss führen.</p>
-
-        <div class="footer">
-            FastWorld steht für Fairness, Gaming und Zusammenhalt
-        </div>
-    </div>
+<div class="header">
+    <h1>LeafMC</h1>
+    <p>DISCORD REGELN</p>
 </div>
 
-<script>
-function createFallingEmoji() {
-    const emoji = document.createElement("div");
-    emoji.classList.add("falling");
-    emoji.innerHTML = Math.random() > 0.5 ? "🎮" : "💬";
-    emoji.style.left = Math.random() * window.innerWidth + "px";
-    emoji.style.animationDuration = (3 + Math.random() * 5) + "s";
-    document.body.appendChild(emoji);
+<div class="container">
 
-    setTimeout(() => {
-        emoji.remove();
-    }, 8000);
-}
+    <div class="card">
+        <h2>🤝 Respektvoller Umgang</h2>
+        <p>
+            Behandle alle Mitglieder freundlich und respektvoll.
+            Keine Beleidigungen, Hetze, Mobbing oder Diskriminierung.
+        </p>
+    </div>
 
-setInterval(createFallingEmoji, 600);
-</script>
+    <div class="card">
+        <h2>🚫 Kein Spam / Nervverhalten</h2>
+        <p>
+            Kein Flooding, übermäßige Emojis, CAPS oder unnötiges Pingen.
+            Halte die Kanäle übersichtlich und angenehm.
+        </p>
+    </div>
+
+</div>
 
 </body>
 </html>
